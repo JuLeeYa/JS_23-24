@@ -1,0 +1,49 @@
+* { 
+  margin: 0; 
+  padding: 0; 
+}
+
+.wrapper{
+ background: url(../img/to-do-list.png) no-repeat;
+ background-size: 281px;
+ position: relative;
+ padding: 50px;
+ margin: 30px 0 0 30px;
+}
+
+.controlls{
+ position: relative;
+ 
+ width: 516px;
+ text-align: left;
+}
+.item-list{
+  height: 100px;
+  margin-top: 6px;
+  margin-bottom: 20px;
+}
+.item-update{
+  list-style: none;
+  padding: 6px;
+}
+
+.list-item-update {
+  display: none;
+}
+.item-value{
+  position: absolute;
+  top: 175px;
+}
+.item-add{
+  padding: 0 5px;
+  position: absolute;
+  left: 186px;
+  top: 175px;
+  background-color: #000;
+  color:#fff;
+  border: 1px solid #000;
+}
+.item-delete{
+  position: absolute;
+  left: -35px;
+}

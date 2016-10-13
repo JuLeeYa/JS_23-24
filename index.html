@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="css/style.css">
+	<script src = "src/require.js" data-main="src/app.js">	</script>
+	<title>ToDo LIST</title>
+</head>
+
+<body>
+
+<script type="text/template" id="wrapper-template">
+		<div class="wrapper">
+			
+			<div class="controlls">
+				
+			
+				<ul class="item-list"></ul>	
+
+				<input type="text" class="item-value">
+				<button class="item-add">Add</button>
+			
+			</div>
+		</div>
+	</script>
+	
+	<script type="text/template" id="list-template">
+		<% for(var i = 0; i<data.length; i++) {%>
+				<li class="item-update">
+						<span data-value="<%= data[i] %>" class="item-delete">x</span>
+
+						<span data-search="<%= data[i] %>" class="list-item"><%= data[i] %></span>
+					<input type="text" class="list-item-update"/>
+				
+				</li>
+		<% }; %>
+
+</body>
+</html>
